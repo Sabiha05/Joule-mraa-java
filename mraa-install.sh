@@ -29,8 +29,7 @@ mkdir build
 cd build
 export JAVA_HOME=/usr/lib/jvm/default/
 cmake -DBUILDSWIGJAVA=ON ..
-javac -cp $DIR_WHERE_YOU_INSTALLED_MRAA/mraa.jar:. Example.java
-jave -cp $DIR_WHERE_YOU_INSTALLED_MRAA/mraa.jar:. Example
+
 make
 make install #Should install Mraa in /usr/lib64/
 rm /usr/lib/libmraa.so* #Remove previous version of Mraa
