@@ -27,7 +27,7 @@ git clone https://github.com/intel-iot-devkit/mraa.git
 cd mraa
 mkdir build
 cd build
-export JAVA_HOME=/usr/lib/jvm/default/
+export JAVA_HOME=/usr/lib/jvm/open-jdk/8/
 cmake -DBUILDSWIGJAVA=ON ..
 
 make
