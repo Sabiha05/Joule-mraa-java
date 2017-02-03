@@ -31,11 +31,6 @@ export JAVA_HOME=/usr/lib/jvm/open-jdk/8/
 cmake -DBUILDSWIGJAVA=ON ..
 make
 make install #Should install Mraa in /usr/lib64/
-set( JAVA_AWT_INCLUDE_PATH $ENV{JAVA_HOME}/include CACHE PATH "" FORCE)
-set( JAVA_AWT_LIBRARY $ENV{JAVA_HOME}/jre/lib/amd64/libjawt.so CACHE FILEPATH "" FORCE)
-set( JAVA_INCLUDE_PATH $ENV{JAVA_HOME}/include CACHE PATH "" FORCE)
-set( JAVA_INCLUDE_PATH2 $ENV{JAVA_HOME}/include/linux CACHE PATH "" FORCE)
-set( JAVA_JVM_LIBRARY $ENV{JAVA_HOME}/jre/lib/amd64/libjvm.so CACHE FILEPATH "" FORCE)
 rm /usr/lib/libmraa.so* #Remove previous version of Mraa
 mv  /usr/lib64/libmraa.so* /usr/lib #Move NEW Mraa files to lib
 mv /usr/lib64/pkgconfig/* /usr/lib/pkgconfig #Move package configuration info
