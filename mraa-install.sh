@@ -1,4 +1,4 @@
-#!/bin/bash_
+#!/bin/bash
 #Installing Mraa
 
 clear
