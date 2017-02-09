@@ -27,8 +27,7 @@ git clone https://github.com/intel-iot-devkit/mraa.git
 cd mraa
 mkdir build
 cd build
-export JAVA_HOME=/usr/lib/jvm/open-jdk/8/
-cmake -DBUILDSWIGJAVA=ON ..
+cmake.. -DBUILDSWIGJAVA=ON 
 make
 make install #Should install Mraa in /usr/lib64/
 rm /usr/lib/libmraa.so* #Remove previous version of Mraa
